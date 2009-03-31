@@ -2,12 +2,12 @@ DESCRIPTION="C++ unit testing framework"
 HOMEPAGE="http://cppunit.sourceforge.net/cppunit-wiki"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
-src_test() {
+__src_test() {
 	cd ${B}
 	cygmake -j1 check
 }
 
 src_install() {
 	cd ${B}
-	cyginstall htmldir=/usr/share/doc/${P}/html
+	cyginstall htmldir=/usr/share/doc/${PN}/html
 }

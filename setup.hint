@@ -1,4 +1,4 @@
 category: Devel
-requires: cygwin
+requires: cygwin libgcc1 libstdc++6
 sdesc: "C++ unit testing framework"
 ldesc: "CppUnit is a C++ unit testing framework."
