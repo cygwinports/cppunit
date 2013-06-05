@@ -1,0 +1,13 @@
+NAME="cppunit"
+VERSION=1.12.1
+RELEASE=2
+CATEGORY="Devel"
+SUMMARY="C++ unit testing framework"
+DESCRIPTION="CppUnit is a C++ unit testing framework."
+HOMEPAGE="http://cppunit.sourceforge.net/cppunit-wiki"
+SRC_URI="mirror://sourceforge/cppunit/cppunit-${VERSION}.tar.gz"
+
+src_install() {
+	cd ${B}
+	cyginstall htmldir=/usr/share/doc/${NAME}/html
+}
